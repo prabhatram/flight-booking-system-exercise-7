@@ -70,7 +70,7 @@ public class FlightBookingTest
             String result = details.toLowerCase().trim().replace(" ", "");
             
             
-            String expected = "Passenger Name.: " + fb.getPassengerFullName(k) + "\n" + 
+            String expected = "Passenger Name: " + fb.getPassengerFullName(k) + "\n" + 
             "\n" + "Source: NANJING (NANJING_LUKOU_INTERNATIONAL_AIRPORT)" + "\n" + 
             "Destination: HELSINKI (HELSINKI_AIRPORT)" + "\n" + 
             "Departure: 2023-04-18" + "\n" + "Return: 2023-05-21" + "\n" + 
