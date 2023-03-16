@@ -30,8 +30,8 @@ public class FlightBookingTest
         fb.setTripSource("1");
         fb.setSourceAirport("1");
 
-        fb.setTripDestination("1", "4");
-        fb.setDestinationAirport("1", "4");
+        fb.setTripDestination("1", "5");
+        fb.setDestinationAirport("1", "5");
 
         fb.setTripType("1");
 
@@ -70,7 +70,7 @@ public class FlightBookingTest
             String result = details.toLowerCase().trim().replace(" ", "");
             
             
-            String expected = "Passenger Name: " + fb.getPassengerFullName(k) + "\n" + 
+            String expected = "Passenger Name: " + fb.getPassengerFullName(k) + 
             "\n" + "Source: NANJING (NANJING_LUKOU_INTERNATIONAL_AIRPORT)" + "\n" + 
             "Destination: HELSINKI (HELSINKI_AIRPORT)" + "\n" + 
             "Departure: 2023-04-18" + "\n" + "Return: 2023-05-21" + "\n" + 
@@ -112,7 +112,7 @@ public class FlightBookingTest
 
         }
 
-        if(fb.reminderQ.size() == 0){
+        if(fb.reminderQueue.size() == 0){
             assertEquals(1, 1);
         }
         else {
